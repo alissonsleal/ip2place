@@ -1,6 +1,10 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+  :root{
+    --white: #fefefe
+  }
+  
   * {
     box-sizing: border-box;
   }
@@ -10,6 +14,11 @@ const GlobalStyle = createGlobalStyle`
   margin: 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+  
   }
 
   a {
