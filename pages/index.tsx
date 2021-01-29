@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import Layout from "../components/Layout";
 
 export default function Home() {
   return (
@@ -7,7 +7,9 @@ export default function Home() {
       <Head>
         <title>IP2Place</title>
       </Head>
-      <h1>IP2Place</h1>
+      <Layout>
+        <h1>IP2Place</h1>
+      </Layout>
     </div>
   );
 }
