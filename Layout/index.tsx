@@ -1,13 +1,12 @@
 import React from "react";
-
-import { Container } from "./styles";
+import GlobalStyle from "./styles";
 
 const Layout: React.FC = ({ children }) => {
   return (
-    <Container>
-      <h1>Layout</h1>
+    <>
+      <GlobalStyle />
       {children}
-    </Container>
+    </>
   );
 };
 
