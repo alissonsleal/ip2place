@@ -1,5 +1,4 @@
 import React, { createContext, useContext, useState } from "react";
-import ResponseData from "../utils/ResponseData";
 
 const AddressContext = createContext<any>({});
 
