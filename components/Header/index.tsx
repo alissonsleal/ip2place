@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { RiArrowRightSLine } from "react-icons/ri";
 import { useAddress } from "../../context/Address";
+import ReactGA from "react-ga";
 
 import { Container } from "./styles";
 
 const Header: React.FC = () => {
   useEffect(() => {
     handleSubmit();
+    ReactGA.initialize(`${process.env.NEXT_PUBLIC_ANALITYCS}`);
   }, []);
 
   const [localAddress, setLocalAddress] = useState("");
@@ -24,6 +26,11 @@ const Header: React.FC = () => {
         }
       );
       setAddress(data);
+
+      ReactGA.event({
+        category: "Search",
+        action: "Searched for an IP Address",
+      });
     } catch (err) {
       throw new Error(err);
     }

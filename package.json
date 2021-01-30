@@ -12,6 +12,7 @@
     "next": "10.0.5",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-ga": "^3.3.0",
     "react-icons": "^4.1.0",
     "react-map-gl": "^6.1.1",
     "styled-components": "^5.2.1"
