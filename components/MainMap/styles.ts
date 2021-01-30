@@ -12,4 +12,7 @@ export const Container = styled.div`
     height: 100%;
     z-index: 1;
   }
+  .mapboxgl-marker {
+    z-index: 2;
+  }
 `;
