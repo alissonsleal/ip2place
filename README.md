@@ -1,34 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+    <a href="https://github.com/Alissonsleal/ip2place/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/Alissonsleal/ip2place?color=sucess&style=flat-square"></a>
+    <a href="https://github.com/Alissonsleal/ip2place/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/Alissonsleal/ip2place?color=sucess&style=flat-square"></a>
+    <a href="https://github.com/Alissonsleal/ip2place/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/Alissonsleal/ip2place?color=sucess&style=flat-square"></a>
+    <a href="https://github.com/Alissonsleal/ip2place/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/Alissonsleal/ip2place?color=sucess&style=flat-square"></a>
+    <a href="https://github.com/Alissonsleal/"><img alt="Alisson Leal GitHub Profile" src="https://img.shields.io/badge/made%20by-Alisson%20Leal-sucess?style=flat-square&logo=appveyor"></a>
+</p>
 
-## Getting Started
+# IP2Place
 
-First, run the development server:
+Instantly find the current geolocation of the IP/URL searched.
+Locations are the most accurate available. Useful in the prevention of online fraud and hacking.
+Build with Next.JS, Typescript and styled-components, fetching the data from [ip-api](https://ip-api.com)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Try now: [IP2Place](https://IP2Place.vercel.app)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Search any IP Address
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+  <p align="center">
+    <img  max-width="768" src="https://i.imgur.com/99z2nG9.png">
+  </p>
+<br />
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Made with Next.JS
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+  <p align="center">
+    <img  max-width="768" src="https://i.imgur.com/dYASuKv.png">
+  </p>
+<br />
 
-## Learn More
+### Made with MapBox and IP-API
 
-To learn more about Next.js, take a look at the following resources:
+  <p align="center">
+    <img  max-width="768" src="https://i.imgur.com/mJ3AqZV.png">
+  </p>
+<br />
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Built With:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [x] Next.JS with Server Side Rendering (SSR)
+- [x] Typescript
+- [x] MapBox with React-Map-GL wrapper
+- [x] Styled-Components
+- [x] Axios
+- [x] ip-api.com
+- [x] Deployed to Vercel
 
-## Deploy on Vercel
+## Contributions
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Feel free to contribute or report issues. Also, if you have any ideas on new names hit me up.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Author Info
+
+- Twitter - [@alissonsleal](https://twitter.com/alissonsleal) <i>dms are open</i>
+- Discord - [Alisson#0629](https://discord.com/)
+- StackOverflow - [Alisson Leal](https://stackoverflow.com/users/14122260/alisson-leal)
+
+[Go to the top 🚀](#IP2Place)
