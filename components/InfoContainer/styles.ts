@@ -49,9 +49,14 @@ export const Container = styled.div`
         padding: 0;
       }
 
-      h5 {
+      h1 {
         color: #373780;
         margin: 0;
+        font-size: 0.8rem;
+
+        @media (max-width: 768px) {
+          font-size: 1rem;
+        }
       }
 
       strong {

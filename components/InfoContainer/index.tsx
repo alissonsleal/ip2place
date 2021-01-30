@@ -13,22 +13,22 @@ const InfoContainer: React.FC = () => {
           {console.log(address)}
           <div>
             <span>
-              <h5>IP ADDRESS</h5>
+              <h1>IP ADDRESS</h1>
               <strong>{address.query}</strong>
             </span>
 
             <span>
-              <h5>LOCATION</h5>
+              <h1>LOCATION</h1>
               <strong>{`${address.city}, ${address.region} ${address.zip}`}</strong>
             </span>
 
             <span>
-              <h5>TIMEZONE</h5>
+              <h1>TIMEZONE</h1>
               <strong>{`UTC ${+address.offset / 3600}:00`}</strong>
             </span>
 
             <span>
-              <h5>ISP</h5>
+              <h1>ISP</h1>
               <strong>{address.isp}</strong>
             </span>
           </div>

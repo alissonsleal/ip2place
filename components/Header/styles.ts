@@ -15,10 +15,14 @@ export const Container = styled.div`
   );
 
   h2,
-  h4 {
+  h3 {
     color: white;
     padding: 0;
     margin: 0rem;
+  }
+
+  h3 {
+    font-size: 16px;
   }
 
   .input-box {
@@ -34,6 +38,11 @@ export const Container = styled.div`
 
     @media (max-width: 400px) {
       height: 78px;
+    }
+
+    label {
+      visibility: visible;
+      width: 0;
     }
 
     input {

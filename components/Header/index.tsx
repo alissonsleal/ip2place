@@ -39,7 +39,7 @@ const Header: React.FC = () => {
   return (
     <Container>
       <h2>IP2Place</h2>
-      <h4>IP Address Tracker</h4>
+      <h3>IP Address Tracker</h3>
       <form
         className="input-box"
         onSubmit={(event) => {
@@ -50,13 +50,21 @@ const Header: React.FC = () => {
         <input
           type="text"
           name="IP Address"
+          id="ip-address"
           value={localAddress}
           placeholder="Search for any IP address or domain"
           onChange={(event) => {
             setLocalAddress(event.target.value);
           }}
         />
-        <button type="submit" onClick={handleSubmit}>
+        <label htmlFor="ip-address">IP Address</label>
+
+        <button
+          name="Search"
+          aria-label="Search and IP Address"
+          type="submit"
+          onClick={handleSubmit}
+        >
           <RiArrowRightSLine size={28} />
         </button>
       </form>

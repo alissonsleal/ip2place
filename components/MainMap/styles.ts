@@ -16,6 +16,17 @@ export const Container = styled.div`
     z-index: 2;
   }
 
+  .mapboxgl-ctrl-bottom-right,
+  .mapboxgl-ctrl-bottom-left {
+    display: none;
+  }
+
+  .mapboxgl-ctrl-attrib-inner {
+    a {
+      display: none;
+    }
+  }
+
   @media (max-width: 768px) {
     height: 130vh;
   }

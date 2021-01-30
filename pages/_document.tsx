@@ -29,30 +29,27 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="en-us">
         <Head>
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
             rel="stylesheet"
           />
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                (function (c, l, a, r, i, t, y) {
-                  c[a] =
-                    c[a] ||
-                    function () {
-                      (c[a].q = c[a].q || []).push(arguments);
-                    };
-                  t = l.createElement(r);
-                  t.async = 1;
-                  t.src = "https://www.clarity.ms/tag/" + i;
-                  y = l.getElementsByTagName(r)[0];
-                  y.parentNode.insertBefore(t, y);
-                })(window, document, "clarity", "script", "57ea2ma1fh");
-              `,
-            }}
+          <meta name="author" content="IP2Tracker" />
+          <meta
+            name="description"
+            content="Instantly find the current geolocation of the IP/URL searched.
+Locations are the most accurate available. Useful in the prevention of online fraud and hacking."
+          />
+          <meta
+            name="keywords"
+            content="ip2place, ip, ip address, tracker, search ip, ip geolocation, location, geolocation, myip"
+          />
+
+          <meta
+            name="google-site-verification"
+            content="Gy5EFTeucGOTohOucovRJIzCaWPkQ1qWs3mktuSNyGw"
           />
         </Head>
         <body>
