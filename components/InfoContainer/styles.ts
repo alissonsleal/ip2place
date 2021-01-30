@@ -18,6 +18,8 @@ export const Container = styled.div`
     padding: 2rem;
     border-radius: 0.75rem;
 
+    z-index: 2;
+
     span {
       display: flex;
       flex-direction: column;

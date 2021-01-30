@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Header from "../components/Header";
 import InfoContainer from "../components/InfoContainer";
+import Map from "../components/MainMap";
 import Layout from "../Layout";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Layout>
         <Header />
         <InfoContainer />
+        <Map />
       </Layout>
     </div>
   );
