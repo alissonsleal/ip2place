@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { RiArrowRightSLine } from "react-icons/ri";
 import { useAddress } from "../../context/Address";
@@ -6,6 +6,10 @@ import { useAddress } from "../../context/Address";
 import { Container } from "./styles";
 
 const Header: React.FC = () => {
+  useEffect(() => {
+    handleSubmit();
+  }, []);
+
   const [localAddress, setLocalAddress] = useState("");
   const { setAddress } = useAddress();
 
@@ -27,11 +31,13 @@ const Header: React.FC = () => {
 
   return (
     <Container>
-      <h2>IP2Place - IP Address Tracker</h2>
+      <h2>IP2Place</h2>
+      <h4>IP Address Tracker</h4>
       <form
         className="input-box"
         onSubmit={(event) => {
           event.preventDefault();
+          console.log(event);
         }}
       >
         <input

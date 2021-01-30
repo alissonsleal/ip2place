@@ -20,6 +20,10 @@ export const Container = styled.div`
 
     z-index: 2;
 
+    @media (max-width: 400px) {
+      top: 175px;
+    }
+
     span {
       display: flex;
       flex-direction: column;
@@ -27,7 +31,7 @@ export const Container = styled.div`
       align-items: flex-start;
       padding-left: 1.5rem;
       margin-right: 1.5rem;
-      width: 9rem;
+      max-width: 100%;
 
       &:not(:first-child) {
         border-left: 1px solid gray;
@@ -41,6 +45,8 @@ export const Container = styled.div`
         width: 80vw;
         height: 5rem;
         place-items: center;
+        margin: 0;
+        padding: 0;
       }
 
       h5 {
@@ -59,6 +65,7 @@ export const Container = styled.div`
 
     @media (max-width: 768px) {
       flex-direction: column;
+      width: 80%;
     }
   }
 `;

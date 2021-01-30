@@ -4,7 +4,7 @@ export const Container = styled.div`
   @import "mapbox-gl/dist/mapbox-gl.css";
 
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-color: #121212;
 
   .map-container {
@@ -14,5 +14,9 @@ export const Container = styled.div`
   }
   .mapboxgl-marker {
     z-index: 2;
+  }
+
+  @media (max-width: 768px) {
+    height: 130vh;
   }
 `;
