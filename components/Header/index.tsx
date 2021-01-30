@@ -12,7 +12,7 @@ const Header: React.FC = () => {
   const handleSubmit = async () => {
     try {
       const { data } = await axios.get(
-        `http://ip-api.com/json/${localAddress}?fields=status,region,regionName,city,zip,lat,lon,offset,isp,query`,
+        `${process.env.NEXT_PUBLIC_CORS_PROXY}http://ip-api.com/json/${localAddress}?fields=status,region,regionName,city,zip,lat,lon,offset,isp,query`,
         {
           headers: {
             Accept: "application/json",
